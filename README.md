@@ -1,3 +1,5 @@
 A studio 1.4 build of ronaldo.exe for older devices
 
+This include builds for the Psvita, Ps3, and Ps4
+
 Main repository  https://github.com/ooodt/ronaldo.exe?tab=readme-ov-file
