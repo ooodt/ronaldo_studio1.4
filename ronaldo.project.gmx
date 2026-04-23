@@ -187,6 +187,8 @@
     <sprite>sprites\spr_hidden0StairsUp</sprite>
     <sprite>sprites\spr_messageFires</sprite>
     <sprite>sprites\spr_negaRing</sprite>
+    <sprite>sprites\spr_LEFT_MOVEMENT</sprite>
+    <sprite>sprites\spr_RIGHT_MOVEMENT</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_hillClouds</background>
@@ -346,7 +348,6 @@
     <object>objects\obj_debug</object>
     <object>objects\obj_message</object>
     <object>objects\obj_skip</object>
-    <object>objects\obj_skip2</object>
     <object>objects\obj_sonicJumpMask</object>
     <object>objects\obj_sonicSpriteMask</object>
     <object>objects\obj_v5BG</object>
@@ -378,11 +379,14 @@
     <object>objects\obj_doge</object>
     <object>objects\obj_negaRing</object>
     <object>objects\obj_name</object>
+    <object>objects\obj_left_touch</object>
+    <object>objects\obj_right_touch</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_tailsHill</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rm_warning</room>
     <room>rooms\rm_startup</room>
     <room>rooms\rm_titleScreen</room>
     <room>rooms\rm_select1</room>
@@ -417,7 +421,6 @@
     <room>rooms\rm_stgHidden1</room>
     <room>rooms\rm_stgHidden2</room>
     <room>rooms\rm_stgV5</room>
-    <room>rooms\rm_warning</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
