@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.tailsHiddenClear == 0)
+            <string>if (global.tailsHiddenClear == 0)&#13;
     instance_create(320, -82, obj_doge);</string>
           </argument>
         </arguments>

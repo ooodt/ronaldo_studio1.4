@@ -47,7 +47,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_hidden0MainFloorTop, 0, x, y - 16, 1, 1, 0, c_dkgray, 1);
+            <string>draw_sprite_ext(spr_hidden0MainFloorTop, 0, x, y - 16, 1, 1, 0, c_dkgray, 1);&#13;
 draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_dkgray, 1);</string>
           </argument>
         </arguments>

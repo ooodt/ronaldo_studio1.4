@@ -25,11 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>action_sprite_set(spr_SonicIdleRight, 0, 0.15);
-
-global.move_right = 0;
-global.move_left = 0;
-</string>
+            <string>action_sprite_set(spr_SonicIdleRight, 0, 0.15);&#13;
+&#13;
+global.move_right = 0;&#13;
+global.move_left = 0;</string>
           </argument>
         </arguments>
       </action>
@@ -51,58 +50,57 @@ global.move_left = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x = obj_playerMain.x;
-self.y = obj_playerMain.y;
-
-//movement
-if global.move_left == 1
-{
-    sprite_index = spr_SonicLeft;
-    image_speed = 0.15;
-}
-
-if global.move_left == 0
-{
-    sprite_index = spr_SonicIdleLeft;
-    image_speed = 0.2;
-}
-
-if global.move_right == 1
-{
-    sprite_index = spr_SonicRight;
-    image_speed = 0.15;
-}
-
-if global.move_right == 0
-{
-    sprite_index = spr_SonicIdleRight;
-    image_speed = 0.15;
-}
-
-if global.move_right == 0 &amp;&amp; global.move_left == 1
-{
-    sprite_index = spr_SonicLeft;
-    image_speed = 0.15;
-}
-
-if global.move_left == 0 &amp;&amp; global.move_right == 1
-{
-    sprite_index = spr_SonicRight;
-    image_speed = 0.15;
-}
-
-if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1
-{
-    sprite_index = spr_SonicRight;
-    image_speed = 0.15;
-}
-
-if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1
-{
-    sprite_index = spr_SonicLeft;
-    image_speed = 0.15;
-}
-</string>
+            <string>self.x = obj_playerMain.x;&#13;
+self.y = obj_playerMain.y;&#13;
+&#13;
+//movement&#13;
+if global.move_left == 1&#13;
+{&#13;
+    sprite_index = spr_SonicLeft;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if global.move_left == 0&#13;
+{&#13;
+    sprite_index = spr_SonicIdleLeft;&#13;
+    image_speed = 0.2;&#13;
+}&#13;
+&#13;
+if global.move_right == 1&#13;
+{&#13;
+    sprite_index = spr_SonicRight;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if global.move_right == 0&#13;
+{&#13;
+    sprite_index = spr_SonicIdleRight;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if global.move_right == 0 &amp;&amp; global.move_left == 1&#13;
+{&#13;
+    sprite_index = spr_SonicLeft;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if global.move_left == 0 &amp;&amp; global.move_right == 1&#13;
+{&#13;
+    sprite_index = spr_SonicRight;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1&#13;
+{&#13;
+    sprite_index = spr_SonicRight;&#13;
+    image_speed = 0.15;&#13;
+}&#13;
+&#13;
+if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1&#13;
+{&#13;
+    sprite_index = spr_SonicLeft;&#13;
+    image_speed = 0.15;&#13;
+}</string>
           </argument>
         </arguments>
       </action>

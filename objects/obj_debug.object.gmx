@@ -213,9 +213,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.rings = -3
-global.tailsHiddenClear=1
-global.knuxHiddenClear=1
+            <string>global.rings = -3&#13;
+global.tailsHiddenClear=1&#13;
+global.knuxHiddenClear=1&#13;
 global.robotnikHiddenClear=1</string>
           </argument>
         </arguments>

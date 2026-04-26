@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>background_blend=c_red;
-obj_hidden2Floor.image_blend=c_black;
-obj_robotnikSpriteMask.image_blend=c_gray;
+            <string>background_blend=c_red;&#13;
+obj_hidden2Floor.image_blend=c_black;&#13;
+obj_robotnikSpriteMask.image_blend=c_gray;&#13;
 global.hudState="hidden"</string>
           </argument>
         </arguments>
@@ -94,7 +94,7 @@ global.hudState="hidden"</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(9700,341,"Why do you keep fighting, "+string(global.player_name)+"?")
+            <string>draw_text(9700,341,"Why do you keep fighting, "+string(global.player_name)+"?")&#13;
 draw_text(9700,355,"My game has only just begun.")</string>
           </argument>
         </arguments>

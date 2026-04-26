@@ -127,9 +127,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if not (instance_exists(obj_knuxCry))
-{
-    instance_create(14028,200,obj_sonicSmokeLeft);
+            <string>if not (instance_exists(obj_knuxCry))&#13;
+{&#13;
+    instance_create(14028,200,obj_sonicSmokeLeft);&#13;
 }</string>
           </argument>
         </arguments>

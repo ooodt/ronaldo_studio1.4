@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.25;
+            <string>image_speed = 0.25;&#13;
 action_set_alarm(15, 0);</string>
           </argument>
         </arguments>
@@ -48,7 +48,7 @@ action_set_alarm(15, 0);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_ringget, 10, false);
+            <string>audio_play_sound(snd_ringget, 10, false);&#13;
 global.rings -= 1;</string>
           </argument>
         </arguments>
@@ -71,11 +71,11 @@ global.rings -= 1;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.__argument_relative = 1;
-action_effect(2, 16, 16, 0, 255, 1);
-global.__argument_relative = 0;
-action_set_alarm(15, 0);
-global.__argument_relative = 1;
+            <string>global.__argument_relative = 1;&#13;
+action_effect(2, 16, 16, 0, 255, 1);&#13;
+global.__argument_relative = 0;&#13;
+action_set_alarm(15, 0);&#13;
+global.__argument_relative = 1;&#13;
 global.__argument_relative = 0;</string>
           </argument>
         </arguments>

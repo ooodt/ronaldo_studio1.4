@@ -87,23 +87,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.hudState="normal"
-{
-image_speed=0.1
-draw_sprite(spr_hudmain,-1,view_xview,view_yview);
-}
-
-else if global.hudState="hidden"
-{
-draw_sprite(spr_hudHidden1,-1,view_xview,view_yview);
-}
-
-else if (global.hudState == "v5")
-{
-    if (global.hudV5Invert)
-        draw_sprite(spr_hudV5, 1, view_xview,view_yview);
-    else
-        draw_sprite(spr_hudV5, 0, view_xview,view_yview);
+            <string>if global.hudState="normal"&#13;
+{&#13;
+image_speed=0.1&#13;
+draw_sprite(spr_hudmain,-1,view_xview,view_yview);&#13;
+}&#13;
+&#13;
+else if global.hudState="hidden"&#13;
+{&#13;
+draw_sprite(spr_hudHidden1,-1,view_xview,view_yview);&#13;
+}&#13;
+&#13;
+else if (global.hudState == "v5")&#13;
+{&#13;
+    if (global.hudV5Invert)&#13;
+        draw_sprite(spr_hudV5, 1, view_xview,view_yview);&#13;
+    else&#13;
+        draw_sprite(spr_hudV5, 0, view_xview,view_yview);&#13;
 }</string>
           </argument>
         </arguments>

@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xDifference = x - view_xview[0];
-yDifference = y - view_yview[0];
-</string>
+            <string>xDifference = x - view_xview[0];&#13;
+yDifference = y - view_yview[0];</string>
           </argument>
         </arguments>
       </action>
@@ -49,12 +48,11 @@ yDifference = y - view_yview[0];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cx = view_xview[0];
-cy = view_yview[0];
-
-x = cx + xDifference;
-y = cy + yDifference;
-</string>
+            <string>cx = view_xview[0];&#13;
+cy = view_yview[0];&#13;
+&#13;
+x = cx + xDifference;&#13;
+y = cy + yDifference;</string>
           </argument>
         </arguments>
       </action>
@@ -76,9 +74,8 @@ y = cy + yDifference;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_left = 0;
-global.move_right = 3;
-</string>
+            <string>global.move_left = 0;&#13;
+global.move_right = 3;</string>
           </argument>
         </arguments>
       </action>
@@ -100,9 +97,8 @@ global.move_right = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_left = 0;
-global.move_right = 3;
-</string>
+            <string>global.move_left = 0;&#13;
+global.move_right = 3;</string>
           </argument>
         </arguments>
       </action>
@@ -124,8 +120,7 @@ global.move_right = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_left = 1;
-</string>
+            <string>global.move_left = 1;</string>
           </argument>
         </arguments>
       </action>

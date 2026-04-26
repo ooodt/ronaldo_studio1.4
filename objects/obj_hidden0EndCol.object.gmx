@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(snd_static)
+            <string>audio_stop_sound(snd_static)&#13;
 room_goto(rm_messageFires);</string>
           </argument>
         </arguments>
@@ -68,17 +68,17 @@ room_goto(rm_messageFires);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_tailsJumpMask)
-    action_kill_object();
-
-with (obj_tailsSpriteMask)
-    action_kill_object();
-
-with (obj_playerMain)
-    action_kill_object();
-
-action_sound(sfx_kefka, 0);
-createStatic(120);
+            <string>with (obj_tailsJumpMask)&#13;
+    action_kill_object();&#13;
+&#13;
+with (obj_tailsSpriteMask)&#13;
+    action_kill_object();&#13;
+&#13;
+with (obj_playerMain)&#13;
+    action_kill_object();&#13;
+&#13;
+action_sound(sfx_kefka, 0);&#13;
+createStatic(120);&#13;
 action_set_alarm(120, 0);</string>
           </argument>
         </arguments>

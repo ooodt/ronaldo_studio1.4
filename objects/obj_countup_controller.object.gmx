@@ -25,20 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-- Countup Timer -
-Created by SlasherX
-*/
-
-//First we set the following to 0.
-seconds = 0;
-minutes = 0;
-hours = 0;
-
-//We make sure the timer doesn't start immediately.
-count_up = true;//set to true if you want the timer to start when obj_countup_controller is created.
-
-//n = how long before the room changes?
+            <string>/*&#13;
+- Countup Timer -&#13;
+Created by SlasherX&#13;
+*/&#13;
+&#13;
+//First we set the following to 0.&#13;
+seconds = 0;&#13;
+minutes = 0;&#13;
+hours = 0;&#13;
+&#13;
+//We make sure the timer doesn't start immediately.&#13;
+count_up = true;//set to true if you want the timer to start when obj_countup_controller is created.&#13;
+&#13;
+//n = how long before the room changes?&#13;
 n = 10;</string>
           </argument>
         </arguments>
@@ -61,24 +61,24 @@ n = 10;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//If it's allowed to start.
-if (count_up == true)
-{
-    seconds += 1/room_speed; //increment seconds by 1 ever real-time second.
-}
-
-//If seconds hits around 60.
-if (seconds &lt; 60) &amp;&amp; (seconds &gt; 59.9)
-{
-    seconds = 0;
-    minutes += 1;//increment minutes by 1.
-}
-
-//If minutes hits 60.
-if (minutes == 60)
-{
-    minutes = 0;
-    hours += 1;//increment hours by 1.
+            <string>//If it's allowed to start.&#13;
+if (count_up == true)&#13;
+{&#13;
+    seconds += 1/room_speed; //increment seconds by 1 ever real-time second.&#13;
+}&#13;
+&#13;
+//If seconds hits around 60.&#13;
+if (seconds &lt; 60) &amp;&amp; (seconds &gt; 59.9)&#13;
+{&#13;
+    seconds = 0;&#13;
+    minutes += 1;//increment minutes by 1.&#13;
+}&#13;
+&#13;
+//If minutes hits 60.&#13;
+if (minutes == 60)&#13;
+{&#13;
+    minutes = 0;&#13;
+    hours += 1;//increment hours by 1.&#13;
 }</string>
           </argument>
         </arguments>
@@ -101,10 +101,10 @@ if (minutes == 60)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.seconds = seconds; //This will grab the value of obj_countup_controller's seconds and store it globally.
-global.minutes = minutes; //This will grab the value of obj_countup_controller's minutes and store it globally.
-global.hours = hours; //This will grab the value of obj_countup_controller's hours and store it globally.
-
+            <string>global.seconds = seconds; //This will grab the value of obj_countup_controller's seconds and store it globally.&#13;
+global.minutes = minutes; //This will grab the value of obj_countup_controller's minutes and store it globally.&#13;
+global.hours = hours; //This will grab the value of obj_countup_controller's hours and store it globally.&#13;
+&#13;
 //Now that the variables are global, we can grab them in the next room.</string>
           </argument>
         </arguments>
@@ -127,50 +127,50 @@ global.hours = hours; //This will grab the value of obj_countup_controller's hou
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Setting up the display
-//Setting up the display
-draw_set_font(fnt_1);
-draw_set_halign(fa_left);
-draw_set_color(c_black);
-
-if (seconds &lt; 10) &amp;&amp; (minutes &lt; 10)
-{
-    draw_text(view_xview+127,view_yview+60, string(minutes) + ":0" + string(seconds));
-}
-else if (seconds &gt;= 10) &amp;&amp; (minutes &gt;= 10)
-{
-    draw_text(view_xview+127,view_yview+60, string(minutes) + ":" + string(seconds));
-}
-else if (seconds &lt; 10) &amp;&amp; (minutes &gt;= 10)
-{
-    draw_text(view_xview+127,view_yview+60, string(minutes) + ":0" + string(seconds));
-}
-else if (seconds &gt;= 10) &amp;&amp; (minutes &lt; 10)
-{
-    draw_text(view_xview+127,view_yview+60, string(minutes) + ":" + string(seconds));
-}
-
-//Setting up the display
-//Setting up the display
-draw_set_font(fnt_1);
-draw_set_halign(fa_left);
-draw_set_color(c_ltgray);
-
-if (seconds &lt; 10) &amp;&amp; (minutes &lt; 10)
-{
-    draw_text(view_xview+128,view_yview+61, string(minutes) + ":0" + string(seconds));
-}
-else if (seconds &gt;= 10) &amp;&amp; (minutes &gt;= 10)
-{
-    draw_text(view_xview+128,view_yview+61, string(minutes) + ":" + string(seconds));
-}
-else if (seconds &lt; 10) &amp;&amp; (minutes &gt;= 10)
-{
-    draw_text(view_xview+128,view_yview+61, string(minutes) + ":0" + string(seconds));
-}
-else if (seconds &gt;= 10) &amp;&amp; (minutes &lt; 10)
-{
-    draw_text(view_xview+128,view_yview+61, string(minutes) + ":" + string(seconds));
+            <string>//Setting up the display&#13;
+//Setting up the display&#13;
+draw_set_font(fnt_1);&#13;
+draw_set_halign(fa_left);&#13;
+draw_set_color(c_black);&#13;
+&#13;
+if (seconds &lt; 10) &amp;&amp; (minutes &lt; 10)&#13;
+{&#13;
+    draw_text(view_xview+127,view_yview+60, string(minutes) + ":0" + string(seconds));&#13;
+}&#13;
+else if (seconds &gt;= 10) &amp;&amp; (minutes &gt;= 10)&#13;
+{&#13;
+    draw_text(view_xview+127,view_yview+60, string(minutes) + ":" + string(seconds));&#13;
+}&#13;
+else if (seconds &lt; 10) &amp;&amp; (minutes &gt;= 10)&#13;
+{&#13;
+    draw_text(view_xview+127,view_yview+60, string(minutes) + ":0" + string(seconds));&#13;
+}&#13;
+else if (seconds &gt;= 10) &amp;&amp; (minutes &lt; 10)&#13;
+{&#13;
+    draw_text(view_xview+127,view_yview+60, string(minutes) + ":" + string(seconds));&#13;
+}&#13;
+&#13;
+//Setting up the display&#13;
+//Setting up the display&#13;
+draw_set_font(fnt_1);&#13;
+draw_set_halign(fa_left);&#13;
+draw_set_color(c_ltgray);&#13;
+&#13;
+if (seconds &lt; 10) &amp;&amp; (minutes &lt; 10)&#13;
+{&#13;
+    draw_text(view_xview+128,view_yview+61, string(minutes) + ":0" + string(seconds));&#13;
+}&#13;
+else if (seconds &gt;= 10) &amp;&amp; (minutes &gt;= 10)&#13;
+{&#13;
+    draw_text(view_xview+128,view_yview+61, string(minutes) + ":" + string(seconds));&#13;
+}&#13;
+else if (seconds &lt; 10) &amp;&amp; (minutes &gt;= 10)&#13;
+{&#13;
+    draw_text(view_xview+128,view_yview+61, string(minutes) + ":0" + string(seconds));&#13;
+}&#13;
+else if (seconds &gt;= 10) &amp;&amp; (minutes &lt; 10)&#13;
+{&#13;
+    draw_text(view_xview+128,view_yview+61, string(minutes) + ":" + string(seconds));&#13;
 }</string>
           </argument>
         </arguments>

@@ -73,9 +73,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_right = 0;
-global.move_left = 0;
-</string>
+            <string>global.move_right = 0;&#13;
+global.move_left = 0;</string>
           </argument>
         </arguments>
       </action>
@@ -97,7 +96,7 @@ global.move_left = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x=obj_playerMain.x;
+            <string>self.x=obj_playerMain.x;&#13;
 self.y=obj_playerMain.y;</string>
           </argument>
         </arguments>
@@ -118,73 +117,72 @@ self.y=obj_playerMain.y;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//movement
-if global.move_left == 1
-{
-sprite_index=spr_tailsLeft
-image_speed=0.15
-}
-
-if global.move_left == 0
-{
-if (hideandseek=0)
-{
-sprite_index=spr_tailsIdleLeft
-image_speed=0.15
-}
-
-else
-{
-sprite_index=spr_tailsScaredRight
-image_speed=0.2
-}
-}
-
-if global.move_right == 1
-{
-sprite_index=spr_tailsRight
-image_speed=0.15
-}
-
-if global.move_right == 0
-{
-if (hideandseek=0)
-{
-sprite_index=spr_tailsIdleRight
-image_speed=0.15
-}
-
-else
-{
-sprite_index=spr_tailsScaredRight
-image_speed=0.2
-}
-}
-
-if global.move_right == 0 &amp;&amp; global.move_left == 1
-{
-sprite_index=spr_tailsLeft
-image_speed=0.15
-}
-
-if global.move_left == 0 &amp;&amp; global.move_right == 1
-{
-sprite_index=spr_tailsRight
-image_speed=0.15
-}
-
-if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1
-{
-sprite_index=spr_tailsRight
-image_speed=0.15
-}
-
-if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1
-{
-sprite_index=spr_tailsLeft
-image_speed=0.15
-}
-</string>
+            <string>//movement&#13;
+if global.move_left == 1&#13;
+{&#13;
+sprite_index=spr_tailsLeft&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+if global.move_left == 0&#13;
+{&#13;
+if (hideandseek=0)&#13;
+{&#13;
+sprite_index=spr_tailsIdleLeft&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+else&#13;
+{&#13;
+sprite_index=spr_tailsScaredRight&#13;
+image_speed=0.2&#13;
+}&#13;
+}&#13;
+&#13;
+if global.move_right == 1&#13;
+{&#13;
+sprite_index=spr_tailsRight&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+if global.move_right == 0&#13;
+{&#13;
+if (hideandseek=0)&#13;
+{&#13;
+sprite_index=spr_tailsIdleRight&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+else&#13;
+{&#13;
+sprite_index=spr_tailsScaredRight&#13;
+image_speed=0.2&#13;
+}&#13;
+}&#13;
+&#13;
+if global.move_right == 0 &amp;&amp; global.move_left == 1&#13;
+{&#13;
+sprite_index=spr_tailsLeft&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+if global.move_left == 0 &amp;&amp; global.move_right == 1&#13;
+{&#13;
+sprite_index=spr_tailsRight&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1&#13;
+{&#13;
+sprite_index=spr_tailsRight&#13;
+image_speed=0.15&#13;
+}&#13;
+&#13;
+if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1&#13;
+{&#13;
+sprite_index=spr_tailsLeft&#13;
+image_speed=0.15&#13;
+}</string>
           </argument>
         </arguments>
       </action>

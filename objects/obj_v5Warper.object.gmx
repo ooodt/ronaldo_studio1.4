@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_V5GorePoles)
-    instance_destroy();
-
-obj_v5ScreamTimer.visible = false;
-
+            <string>with (obj_V5GorePoles)&#13;
+    instance_destroy();&#13;
+&#13;
+obj_v5ScreamTimer.visible = false;&#13;
+&#13;
 obj_playerMain.x = 900;</string>
           </argument>
         </arguments>

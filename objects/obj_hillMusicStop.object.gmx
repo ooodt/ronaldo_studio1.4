@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_hudMain.alarm[0]=2
+            <string>obj_hudMain.alarm[0]=2&#13;
 obj_playerMain.canJump=0</string>
           </argument>
         </arguments>

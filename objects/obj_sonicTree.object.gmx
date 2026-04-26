@@ -25,27 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>chance = choose(0, 1, 2)
-
-if (chance = 0)
-{
-    self.x=7552;
-    self.y=80;
-    sprite_index=spr_sonicTree1;
-}
-
-else if (chance = 1)
-{
-    self.x=9806;
-    self.y=124;
-    sprite_index=spr_sonicTree2;
-}
-
-else if (chance = 2)
-{
-    self.x=11267;
-    self.y=132;
-    sprite_index=spr_sonicTree3;
+            <string>chance = choose(0, 1, 2)&#13;
+&#13;
+if (chance = 0)&#13;
+{&#13;
+    self.x=7552;&#13;
+    self.y=80;&#13;
+    sprite_index=spr_sonicTree1;&#13;
+}&#13;
+&#13;
+else if (chance = 1)&#13;
+{&#13;
+    self.x=9806;&#13;
+    self.y=124;&#13;
+    sprite_index=spr_sonicTree2;&#13;
+}&#13;
+&#13;
+else if (chance = 2)&#13;
+{&#13;
+    self.x=11267;&#13;
+    self.y=132;&#13;
+    sprite_index=spr_sonicTree3;&#13;
 }</string>
           </argument>
         </arguments>

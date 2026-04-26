@@ -25,19 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_knuxSpriteMask.image_blend=c_red;
-obj_knuxJumpMask.image_blend=c_red;
-
-if (background_yscale[0]&lt;8)
-{
-background_xscale[0]+=0.3;
-background_yscale[0]+=0.2;
-}
-
-else
-{
-background_xscale[0]=1;
-background_yscale[0]=1;
+            <string>obj_knuxSpriteMask.image_blend=c_red;&#13;
+obj_knuxJumpMask.image_blend=c_red;&#13;
+&#13;
+if (background_yscale[0]&lt;8)&#13;
+{&#13;
+background_xscale[0]+=0.3;&#13;
+background_yscale[0]+=0.2;&#13;
+}&#13;
+&#13;
+else&#13;
+{&#13;
+background_xscale[0]=1;&#13;
+background_yscale[0]=1;&#13;
 }</string>
           </argument>
         </arguments>
@@ -104,10 +104,10 @@ background_yscale[0]=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(2023,172,"You're fun to play with, " + string(global.player_name) + ".")
-draw_text(3989,83,"But this is my world...")
-draw_text(6188,71,"Won't be long now...")
-draw_text(9000,341,"Soon, " + string(global.player_name) + "will be joining us...")
+            <string>draw_text(2023,172,"You're fun to play with, " + string(global.player_name) + ".")&#13;
+draw_text(3989,83,"But this is my world...")&#13;
+draw_text(6188,71,"Won't be long now...")&#13;
+draw_text(9000,341,"Soon, " + string(global.player_name) + "will be joining us...")&#13;
 draw_text(13288,156,string(global.player_name) + ", are you listening?")</string>
           </argument>
         </arguments>

@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.25;
+            <string>image_speed = 0.25;&#13;
 alarm[0] = room_speed * 1.6;</string>
           </argument>
         </arguments>

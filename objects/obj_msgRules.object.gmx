@@ -97,7 +97,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1]=15;
+            <string>alarm[1]=15;&#13;
 self.visible=0;</string>
           </argument>
         </arguments>

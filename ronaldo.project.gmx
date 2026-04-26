@@ -386,7 +386,6 @@
     <timeline>timelines\timeline_tailsHill</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_warning</room>
     <room>rooms\rm_startup</room>
     <room>rooms\rm_titleScreen</room>
     <room>rooms\rm_select1</room>
@@ -421,6 +420,7 @@
     <room>rooms\rm_stgHidden1</room>
     <room>rooms\rm_stgHidden2</room>
     <room>rooms\rm_stgV5</room>
+    <room>rooms\rm_warning</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

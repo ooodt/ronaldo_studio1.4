@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_1);
-draw_set_halign(fa_left);
-draw_set_color(c_black);
-
-draw_text(view_xview+127,view_yview+28, string(global.playerscore));
-
-draw_set_font(fnt_1);
-draw_set_halign(fa_left);
-draw_set_color(c_ltgray);
-
+            <string>draw_set_font(fnt_1);&#13;
+draw_set_halign(fa_left);&#13;
+draw_set_color(c_black);&#13;
+&#13;
+draw_text(view_xview+127,view_yview+28, string(global.playerscore));&#13;
+&#13;
+draw_set_font(fnt_1);&#13;
+draw_set_halign(fa_left);&#13;
+draw_set_color(c_ltgray);&#13;
+&#13;
 draw_text(view_xview+128,view_yview+29, string(global.playerscore));</string>
           </argument>
         </arguments>

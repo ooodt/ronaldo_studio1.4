@@ -167,7 +167,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x -=25;
+            <string>self.x -=25;&#13;
 self.y -=26;</string>
           </argument>
         </arguments>
