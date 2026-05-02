@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alpha=1&#13;
-state="fadeOut"&#13;
+            <string>alpha=1
+
+state="fadeOut"
+
 sprite_index=spr_fadeBlack;</string>
           </argument>
         </arguments>
@@ -49,17 +51,28 @@ sprite_index=spr_fadeBlack;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state="fadeOut")&#13;
-{&#13;
-if (alpha&lt;=1) alpha-=0.1&#13;
-draw_sprite_ext(sprite_index,-1,x,y,1,1,0,-1,alpha)&#13;
-&#13;
-if(alpha&lt;=0)&#13;
-with(self)&#13;
-{&#13;
-instance_destroy();&#13;
-}&#13;
-&#13;
+            <string>if (state="fadeOut")
+
+{
+
+if (alpha&lt;=1) alpha-=0.1
+
+draw_sprite_ext(sprite_index,-1,x,y,1,1,0,-1,alpha)
+
+
+
+if(alpha&lt;=0)
+
+with(self)
+
+{
+
+instance_destroy();
+
+}
+
+
+
 }</string>
           </argument>
         </arguments>

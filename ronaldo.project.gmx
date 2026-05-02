@@ -76,7 +76,6 @@
     <sprite>sprites\spr_tailsPuzzled</sprite>
     <sprite>sprites\spr_tailsPoke</sprite>
     <sprite>sprites\spr_staticMain</sprite>
-    <sprite>sprites\spr_dogeText</sprite>
     <sprite>sprites\spr_staticTrans</sprite>
     <sprite>sprites\spr_sonicTree1</sprite>
     <sprite>sprites\spr_sonicTree2</sprite>
@@ -251,7 +250,6 @@
     <object>objects\obj_static</object>
     <object>objects\obj_dogeTrigger</object>
     <object>objects\obj_doge2</object>
-    <object>objects\obj_dogeText</object>
     <object>objects\obj_staticIncrease</object>
     <object>objects\obj_timerStaticHill</object>
     <object>objects\obj_tailsDummy</object>

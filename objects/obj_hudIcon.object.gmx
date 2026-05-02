@@ -25,19 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.character="tails")&#13;
-{&#13;
-    draw_sprite(spr_hudTails,-1,view_xview+13,view_yview+406)&#13;
-}&#13;
-&#13;
-else if (global.character="knux")&#13;
-{&#13;
-    draw_sprite(spr_hudKnux,-1,view_xview+13,view_yview+406)&#13;
-}&#13;
-&#13;
-else if (global.character="robotnik")&#13;
-{&#13;
-    draw_sprite(spr_hudEgg,-1,view_xview+13,view_yview+406)&#13;
+            <string>if (global.character="tails")
+
+{
+
+    draw_sprite(spr_hudTails,-1,view_xview+13,view_yview+406)
+
+}
+
+
+
+else if (global.character="knux")
+
+{
+
+    draw_sprite(spr_hudKnux,-1,view_xview+13,view_yview+406)
+
+}
+
+
+
+else if (global.character="robotnik")
+
+{
+
+    draw_sprite(spr_hudEgg,-1,view_xview+13,view_yview+406)
+
 }</string>
           </argument>
         </arguments>

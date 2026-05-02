@@ -87,16 +87,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_tailsSpriteMask)&#13;
-    action_kill_object();&#13;
-&#13;
-with (obj_tailsJumpMask)&#13;
-    action_kill_object();&#13;
-&#13;
-with (obj_playerMain)&#13;
-    action_kill_object();&#13;
-&#13;
-createStatic(120);&#13;
+            <string>with (obj_tailsSpriteMask)
+
+    action_kill_object();
+
+
+
+with (obj_tailsJumpMask)
+
+    action_kill_object();
+
+
+
+with (obj_playerMain)
+
+    action_kill_object();
+
+
+
+createStatic(120);
+
 action_set_alarm(120, 0);</string>
           </argument>
         </arguments>

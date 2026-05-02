@@ -73,14 +73,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.character="tails")&#13;
-{&#13;
-    alarm[0]=40&#13;
-}&#13;
-&#13;
-else if (global.character="robotnik")&#13;
-{&#13;
-    alarm[0]=40&#13;
+            <string>if (global.character="tails")
+
+{
+
+    alarm[0]=40
+
+}
+
+
+
+else if (global.character="robotnik")
+
+{
+
+    alarm[0]=40
+
 }</string>
           </argument>
         </arguments>

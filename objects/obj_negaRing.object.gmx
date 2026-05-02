@@ -25,13 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.25;&#13;
+            <string>image_speed = 0.25;
+
 action_set_alarm(15, 0);</string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_ringget</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,8 +73,8 @@ action_set_alarm(15, 0);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_ringget, 10, false);&#13;
-global.rings -= 1;</string>
+            <string>global.rings -= 1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -71,11 +96,16 @@ global.rings -= 1;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.__argument_relative = 1;&#13;
-action_effect(2, 16, 16, 0, 255, 1);&#13;
-global.__argument_relative = 0;&#13;
-action_set_alarm(15, 0);&#13;
-global.__argument_relative = 1;&#13;
+            <string>global.__argument_relative = 1;
+
+action_effect(2, 16, 16, 0, 255, 1);
+
+global.__argument_relative = 0;
+
+action_set_alarm(15, 0);
+
+global.__argument_relative = 1;
+
 global.__argument_relative = 0;</string>
           </argument>
         </arguments>

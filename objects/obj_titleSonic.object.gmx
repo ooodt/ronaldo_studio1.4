@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>&#13;
+            <string>
+
 image_speed=0;</string>
           </argument>
         </arguments>
@@ -168,9 +169,12 @@ image_speed=0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if self.y &lt;=227&#13;
-{&#13;
-    visible=1;&#13;
+            <string>if self.y &lt;=227
+
+{
+
+    visible=1;
+
 }</string>
           </argument>
         </arguments>

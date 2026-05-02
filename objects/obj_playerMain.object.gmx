@@ -25,30 +25,54 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.character="tails")&#13;
-{&#13;
-    instance_create(self.x,self.y,obj_tailsSpriteMask);&#13;
-    instance_create(self.x,self.y,obj_tailsJumpMask);&#13;
-}&#13;
-&#13;
-else if (global.character="knux")&#13;
-{&#13;
-&#13;
-        instance_create(self.x,self.y,obj_knuxSpriteMask);&#13;
-        instance_create(self.x,self.y,obj_knuxJumpMask);&#13;
-&#13;
-}&#13;
-&#13;
-else if (global.character="robotnik")&#13;
-{&#13;
-    instance_create(self.x,self.y,obj_robotnikSpriteMask);&#13;
-}&#13;
-&#13;
-else if (global.character="sonic")&#13;
-{&#13;
-    canJump = 0;&#13;
-    instance_create(self.x,self.y,obj_sonicSpriteMask);&#13;
-	    instance_create(self.x,self.y,obj_sonicJumpMask);&#13;
+            <string>if (global.character="tails")
+
+{
+
+    instance_create(self.x,self.y,obj_tailsSpriteMask);
+
+    instance_create(self.x,self.y,obj_tailsJumpMask);
+
+}
+
+
+
+else if (global.character="knux")
+
+{
+
+
+
+        instance_create(self.x,self.y,obj_knuxSpriteMask);
+
+        instance_create(self.x,self.y,obj_knuxJumpMask);
+
+
+
+}
+
+
+
+else if (global.character="robotnik")
+
+{
+
+    instance_create(self.x,self.y,obj_robotnikSpriteMask);
+
+}
+
+
+
+else if (global.character="sonic")
+
+{
+
+    canJump = 0;
+
+    instance_create(self.x,self.y,obj_sonicSpriteMask);
+
+	    instance_create(self.x,self.y,obj_sonicJumpMask);
+
 }</string>
           </argument>
         </arguments>
@@ -69,18 +93,30 @@ else if (global.character="sonic")&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Core Variables&#13;
-&#13;
-var_speed = 1; // The speed the player gains per step until it have reached its max&#13;
-var_maxspeed = 7; // The max speed the player can have&#13;
-var_jumpheight = 12; // The hight the player jumps&#13;
-var_move = 0; // If the player is moving (using A or D)&#13;
-var_gravity = 0.5; // The gravity&#13;
-var_direction = "stopped"&#13;
-canJump=1&#13;
-&#13;
-global.move_right=0;&#13;
-global.move_left=0;</string>
+            <string>//Core Variables
+
+
+
+var_speed = 1; // The speed the player gains per step until it have reached its max
+
+var_maxspeed = 7; // The max speed the player can have
+
+var_jumpheight = 12; // The hight the player jumps
+
+var_move = 0; // If the player is moving (using A or D)
+
+var_gravity = 0.5; // The gravity
+
+var_direction = "stopped"
+
+canJump=1
+
+
+
+global.move_right=0;
+global.move_left=0;
+device_mouse_dbclick_enable(true);
+</string>
           </argument>
         </arguments>
       </action>
@@ -102,23 +138,40 @@ global.move_left=0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.character = "tails")&#13;
-{&#13;
-obj_tailsJumpMask.visible = 0;&#13;
-obj_tailsSpriteMask.visible = 1;&#13;
-}&#13;
-else if (global.character = "knux")&#13;
-{&#13;
-obj_knuxJumpMask.visible = 0;&#13;
-obj_knuxSpriteMask.visible = 1;&#13;
-&#13;
-}&#13;
-&#13;
-&#13;
-/*else&#13;
-{&#13;
-obj_robotnikJumpMask.visible = 0;&#13;
-obj_robotnikSpriteMask.visible = 1;&#13;
+            <string>if (global.character = "tails")
+
+{
+
+obj_tailsJumpMask.visible = 0;
+
+obj_tailsSpriteMask.visible = 1;
+
+}
+
+else if (global.character = "knux")
+
+{
+
+obj_knuxJumpMask.visible = 0;
+
+obj_knuxSpriteMask.visible = 1;
+
+
+
+}
+
+
+
+
+
+/*else
+
+{
+
+obj_robotnikJumpMask.visible = 0;
+
+obj_robotnikSpriteMask.visible = 1;
+
 }</string>
           </argument>
         </arguments>
@@ -141,11 +194,16 @@ obj_robotnikSpriteMask.visible = 1;&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Don't stuck on  walls (X axis, &lt;- -&gt;)&#13;
-if not place_free(x+hspeed,y) {&#13;
-hspeed = 0; }&#13;
-&#13;
-if not place_free(x-hspeed,y) {&#13;
+            <string>// Don't stuck on  walls (X axis, &lt;- -&gt;)
+
+if not place_free(x+hspeed,y) {
+
+hspeed = 0; }
+
+
+
+if not place_free(x-hspeed,y) {
+
 hspeed = 0; }</string>
           </argument>
         </arguments>
@@ -168,104 +226,188 @@ hspeed = 0; }</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Gravity&#13;
-if place_free(x,y+1) {&#13;
-gravity = var_gravity; }&#13;
-else {&#13;
-gravity = 0; }&#13;
-&#13;
-// Speed&#13;
-if hspeed &gt;= var_speed&#13;
-and var_move = 0 {&#13;
-hspeed -= var_speed; }&#13;
-&#13;
-if hspeed &lt;= -var_speed&#13;
-and var_move = 0 {&#13;
-hspeed += var_speed; }&#13;
-&#13;
-// Move&#13;
-if global.move_right == 1&#13;
-or global.move_left == 1{&#13;
-var_move = 1; }&#13;
-else {&#13;
-var_move = 0;}&#13;
-&#13;
-// setup&#13;
-if gamepad_button_check(0, gp_padr) || keyboard_check(vk_right){&#13;
-global.move_right = 1;}&#13;
-&#13;
-if gamepad_button_check_released(0, gp_padr) ||keyboard_check_released(vk_right){&#13;
-global.move_right = 0;}&#13;
-&#13;
-if gamepad_button_check(0, gp_padl) || keyboard_check(vk_left){&#13;
-global.move_left = 1;}&#13;
-&#13;
-if gamepad_button_check_released(0, gp_padl) || keyboard_check_released(vk_left){&#13;
-global.move_left = 0;&#13;
-global.move_right =3}&#13;
-&#13;
-&#13;
-// Movement right&#13;
-if global.move_right == 1{&#13;
-if place_free(x+hspeed+var_speed,y)&#13;
-and hspeed &lt; var_maxspeed {&#13;
-hspeed += var_speed;&#13;
-var_direction = "right"; }&#13;
-}&#13;
-// Stop (if the player can go the double speed towards the solid, it will)&#13;
-if global.move_right == 0{&#13;
-if hspeed &gt;= (var_speed*2) {&#13;
-hspeed -= (var_speed*2); }&#13;
-&#13;
-if not hspeed &gt;= (var_speed*2)&#13;
-and hspeed &gt;= var_speed {&#13;
-hspeed -= var_speed;&#13;
-var_direction = "stopped"; }&#13;
-&#13;
-}&#13;
-&#13;
-// Movement left&#13;
-if global.move_left == 1{&#13;
-if place_free(x-hspeed-var_speed,y)&#13;
-and hspeed &gt; -var_maxspeed {&#13;
-hspeed -= var_speed;&#13;
-var_direction = "left"; }&#13;
-}&#13;
-// Stop (if the player can go the double speed towards the solid, it will)&#13;
-if global.move_left == 0{&#13;
-if hspeed &lt;= -(var_speed*2) {&#13;
-hspeed += (var_speed*2); }&#13;
-&#13;
-if not hspeed &lt;= -(var_speed*2)&#13;
-and hspeed &lt;= -var_speed {&#13;
-hspeed += var_speed;&#13;
-var_direction = "stopped"; }&#13;
-}&#13;
-&#13;
-// Jump &#13;
-if gamepad_button_check_pressed(0, gp_face1){&#13;
-   if (canJump=1)&#13;
-       if not (global.character="robotnik")&#13;
-       {&#13;
-           if not place_free(x,y+1)&#13;
-       and place_free(x,y-1) {&#13;
-       vspeed -= var_jumpheight;&#13;
-       sound_play(snd_jump);&#13;
-           if (global.character = "tails")&#13;
-           {&#13;
-               obj_tailsJumpMask.visible = 1;&#13;
-               obj_tailsSpriteMask.visible = 0;&#13;
-               }&#13;
-           if (global.character = "knux")&#13;
-               {&#13;
-&#13;
-                obj_knuxJumpMask.visible = 1;&#13;
-                obj_knuxSpriteMask.visible = 0;&#13;
-&#13;
-             }&#13;
-             alarm[1]=50; }&#13;
-             }&#13;
-}</string>
+            <string>// Gravity
+if place_free(x,y+1) {
+gravity = var_gravity; }
+else {
+gravity = 0; }
+
+
+
+// Speed
+if hspeed &gt;= var_speed
+and var_move = 0 {
+hspeed -= var_speed; }
+
+
+if hspeed &lt;= -var_speed
+and var_move = 0 {
+hspeed += var_speed; }
+
+
+
+// Move
+if global.move_right == 1
+or global.move_left == 1{
+var_move = 1; }
+else {
+var_move = 0;}
+
+
+
+// setup
+if gamepad_button_check(0, gp_padr) || keyboard_check(vk_right){
+global.move_right = 1;}
+
+if gamepad_button_check_released(0, gp_padr) ||keyboard_check_released(vk_right){
+global.move_right = 0;}
+
+if gamepad_button_check(0, gp_padl) || keyboard_check(vk_left){
+global.move_left = 1;}
+
+if gamepad_button_check_released(0, gp_padl) || keyboard_check_released(vk_left){
+global.move_left = 0;
+global.move_right =3}
+
+
+
+
+
+// Movement right
+if global.move_right == 1{
+if place_free(x+hspeed+var_speed,y)
+and hspeed &lt; var_maxspeed {
+hspeed += var_speed;
+var_direction = "right"; }
+}
+
+// Stop (if the player can go the double speed towards the solid, it will)
+if global.move_right == 0{
+if hspeed &gt;= (var_speed*2) {
+hspeed -= (var_speed*2); }
+
+if not hspeed &gt;= (var_speed*2)
+and hspeed &gt;= var_speed {
+hspeed -= var_speed;
+var_direction = "stopped"; }
+}
+
+// Movement left
+if global.move_left == 1{
+if place_free(x-hspeed-var_speed,y)
+and hspeed &gt; -var_maxspeed {
+hspeed -= var_speed;
+var_direction = "left"; }
+}
+
+// Stop (if the player can go the double speed towards the solid, it will)
+if global.move_left == 0{
+if hspeed &lt;= -(var_speed*2) {
+hspeed += (var_speed*2); }
+
+if not hspeed &lt;= -(var_speed*2)
+and hspeed &lt;= -var_speed {
+hspeed += var_speed;
+var_direction = "stopped"; }
+}
+
+// Jump 
+if gamepad_button_check_pressed(0, gp_face1){
+
+if (canJump=1)
+
+if not (global.character="robotnik")
+
+{
+
+if not place_free(x,y+1)
+
+and place_free(x,y-1) {
+
+vspeed -= var_jumpheight;
+
+sound_play(snd_jump);
+
+if (global.character = "tails")
+
+{
+
+obj_tailsJumpMask.visible = 1;
+
+obj_tailsSpriteMask.visible = 0;
+
+}
+
+if (global.character = "knux")
+
+{
+
+
+
+obj_knuxJumpMask.visible = 1;
+
+obj_knuxSpriteMask.visible = 0;
+
+
+
+}
+
+alarm[1]=50; }
+
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//ANALOG SUPPORT
+if (gamepad_is_connected(0)){
+
+var deadzone = 0.3;
+
+//Right movement
+if (keyboard_check(vk_right) 
+    || gamepad_button_check(0, gp_padr) 
+    || gamepad_axis_value(0, gp_axislh) &gt; deadzone) 
+{
+    global.move_right = 1;
+} else {
+    if (global.move_right != 3) {
+        global.move_right = 0;
+    }
+}
+
+//Left movement
+if (keyboard_check(vk_left) 
+    || gamepad_button_check(0, gp_padl) 
+    || gamepad_axis_value(0, gp_axislh) &lt; -deadzone) 
+{
+    global.move_left = 1;
+} else {
+    if (global.move_left == 1) {
+        global.move_left = 0;
+        global.move_right = 3; 
+    }
+}
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -419,7 +561,8 @@ if gamepad_button_check_pressed(0, gp_face1){&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Doesn't go through blocks by touching them&#13;
+            <string>// Doesn't go through blocks by touching them
+
 vspeed = 0;</string>
           </argument>
         </arguments>
@@ -442,7 +585,8 @@ vspeed = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Doesn't go through blocks by touching them&#13;
+            <string>// Doesn't go through blocks by touching them
+
 vspeed = 0;</string>
           </argument>
         </arguments>
@@ -487,7 +631,8 @@ vspeed = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Doesn't go through blocks by touching them&#13;
+            <string>// Doesn't go through blocks by touching them
+
 vspeed = 0;</string>
           </argument>
         </arguments>
@@ -510,8 +655,73 @@ vspeed = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Doesn't go through blocks by touching them&#13;
+            <string>// Doesn't go through blocks by touching them
+
 vspeed = 0;</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Jump
+
+if (canJump=1)
+
+if not (global.character="robotnik")
+
+{
+
+if not place_free(x,y+1)
+
+and place_free(x,y-1) {
+
+vspeed -= var_jumpheight;
+
+sound_play(snd_jump);
+
+if (global.character = "tails")
+
+{
+
+obj_tailsJumpMask.visible = 1;
+
+obj_tailsSpriteMask.visible = 0;
+
+}
+
+if (global.character = "knux")
+
+{
+
+
+
+obj_knuxJumpMask.visible = 1;
+
+obj_knuxSpriteMask.visible = 0;
+
+
+
+}
+
+alarm[1]=50; }
+
+}</string>
           </argument>
         </arguments>
       </action>
@@ -533,27 +743,48 @@ vspeed = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Jump&#13;
-if (canJump=1)&#13;
-if not (global.character="robotnik")&#13;
-{&#13;
-if not place_free(x,y+1)&#13;
-and place_free(x,y-1) {&#13;
-vspeed -= var_jumpheight;&#13;
-sound_play(snd_jump);&#13;
-if (global.character = "tails")&#13;
-{&#13;
-obj_tailsJumpMask.visible = 1;&#13;
-obj_tailsSpriteMask.visible = 0;&#13;
-}&#13;
-if (global.character = "knux")&#13;
-{&#13;
-&#13;
-obj_knuxJumpMask.visible = 1;&#13;
-obj_knuxSpriteMask.visible = 0;&#13;
-&#13;
-}&#13;
-alarm[1]=50; }&#13;
+            <string>// Jump
+
+if (canJump=1)
+
+if not (global.character="robotnik")
+
+{
+
+if not place_free(x,y+1)
+
+and place_free(x,y-1) {
+
+vspeed -= var_jumpheight;
+
+sound_play(snd_jump);
+
+if (global.character = "tails")
+
+{
+
+obj_tailsJumpMask.visible = 1;
+
+obj_tailsSpriteMask.visible = 0;
+
+}
+
+if (global.character = "knux")
+
+{
+
+
+
+obj_knuxJumpMask.visible = 1;
+
+obj_knuxSpriteMask.visible = 0;
+
+
+
+}
+
+alarm[1]=50; }
+
 }</string>
           </argument>
         </arguments>
@@ -576,27 +807,48 @@ alarm[1]=50; }&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Jump&#13;
-if (canJump=1)&#13;
-if not (global.character="robotnik")&#13;
-{&#13;
-if not place_free(x,y+1)&#13;
-and place_free(x,y-1) {&#13;
-vspeed -= var_jumpheight;&#13;
-sound_play(snd_jump);&#13;
-if (global.character = "tails")&#13;
-{&#13;
-obj_tailsJumpMask.visible = 1;&#13;
-obj_tailsSpriteMask.visible = 0;&#13;
-}&#13;
-if (global.character = "knux")&#13;
-{&#13;
-&#13;
-obj_knuxJumpMask.visible = 1;&#13;
-obj_knuxSpriteMask.visible = 0;&#13;
-&#13;
-}&#13;
-alarm[1]=50; }&#13;
+            <string>// Jump
+
+if (canJump=1)
+
+if not (global.character="robotnik")
+
+{
+
+if not place_free(x,y+1)
+
+and place_free(x,y-1) {
+
+vspeed -= var_jumpheight;
+
+sound_play(snd_jump);
+
+if (global.character = "tails")
+
+{
+
+obj_tailsJumpMask.visible = 1;
+
+obj_tailsSpriteMask.visible = 0;
+
+}
+
+if (global.character = "knux")
+
+{
+
+
+
+obj_knuxJumpMask.visible = 1;
+
+obj_knuxSpriteMask.visible = 0;
+
+
+
+}
+
+alarm[1]=50; }
+
 }</string>
           </argument>
         </arguments>

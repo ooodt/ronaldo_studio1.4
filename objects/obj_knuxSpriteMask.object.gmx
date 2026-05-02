@@ -53,7 +53,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_right = 0;&#13;
+            <string>global.move_right = 0;
+
 global.move_left = 0;</string>
           </argument>
         </arguments>
@@ -76,7 +77,8 @@ global.move_left = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x=obj_playerMain.x;&#13;
+            <string>self.x=obj_playerMain.x;
+
 self.y=obj_playerMain.y;</string>
           </argument>
         </arguments>
@@ -97,53 +99,100 @@ self.y=obj_playerMain.y;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Movement&#13;
-if global.move_left == 1&#13;
-{&#13;
-sprite_index=spr_knuxLeft&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if global.move_left == 0&#13;
-{&#13;
-sprite_index=spr_knuxIdleLeft&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if global.move_right == 1&#13;
-{&#13;
-sprite_index=spr_knuxRight&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if global.move_right == 0&#13;
-{&#13;
-sprite_index=spr_knuxIdleRight&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if global.move_right == 0 &amp;&amp; global.move_left == 1&#13;
-{&#13;
-sprite_index=spr_knuxLeft&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if global.move_left == 0 &amp;&amp; global.move_right == 1&#13;
-{&#13;
-sprite_index=spr_knuxRight&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1&#13;
-{&#13;
-sprite_index=spr_knuxRight&#13;
-image_speed=0.15&#13;
-}&#13;
-&#13;
-if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1&#13;
-{&#13;
-sprite_index=spr_knuxLeft&#13;
-image_speed=0.15&#13;
+            <string>// Movement
+
+if global.move_left == 1
+
+{
+
+sprite_index=spr_knuxLeft
+
+image_speed=0.15
+
+}
+
+
+
+if global.move_left == 0
+
+{
+
+sprite_index=spr_knuxIdleLeft
+
+image_speed=0.15
+
+}
+
+
+
+if global.move_right == 1
+
+{
+
+sprite_index=spr_knuxRight
+
+image_speed=0.15
+
+}
+
+
+
+if global.move_right == 0
+
+{
+
+sprite_index=spr_knuxIdleRight
+
+image_speed=0.15
+
+}
+
+
+
+if global.move_right == 0 &amp;&amp; global.move_left == 1
+
+{
+
+sprite_index=spr_knuxLeft
+
+image_speed=0.15
+
+}
+
+
+
+if global.move_left == 0 &amp;&amp; global.move_right == 1
+
+{
+
+sprite_index=spr_knuxRight
+
+image_speed=0.15
+
+}
+
+
+
+if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1
+
+{
+
+sprite_index=spr_knuxRight
+
+image_speed=0.15
+
+}
+
+
+
+if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1
+
+{
+
+sprite_index=spr_knuxLeft
+
+image_speed=0.15
+
 }</string>
           </argument>
         </arguments>

@@ -25,17 +25,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = room_speed * 30;&#13;
-image_speed=0;&#13;
-&#13;
-if (global.tailsHiddenClear=1) &amp;&amp; (global.knuxHiddenClear=1) &amp;&amp; (global.robotnikHiddenClear=1)&#13;
-{&#13;
-    image_index=1;&#13;
-}&#13;
-&#13;
-else&#13;
-{&#13;
-    image_index=0&#13;
+            <string>alarm[0] = room_speed * 30;
+
+image_speed=0;
+
+
+
+if (global.tailsHiddenClear=1) &amp;&amp; (global.knuxHiddenClear=1) &amp;&amp; (global.robotnikHiddenClear=1)
+
+{
+
+    image_index=1;
+
+}
+
+
+
+else
+
+{
+
+    image_index=0
+
 }</string>
           </argument>
         </arguments>
@@ -58,11 +69,16 @@ else&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.rings == -3)&#13;
-{&#13;
-    global.character = "sonic";&#13;
-    audio_stop_sound(snd_endgameMessage1);&#13;
-    room_goto(rm_stgV5);&#13;
+            <string>if (global.rings == -3)
+
+{
+
+    global.character = "sonic";
+
+    audio_stop_sound(snd_endgameMessage1);
+
+    room_goto(rm_stgV5);
+
 }</string>
           </argument>
         </arguments>

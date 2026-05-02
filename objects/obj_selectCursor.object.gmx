@@ -71,19 +71,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room=rm_select1)&#13;
-{&#13;
-    room_goto(rm_hillLoading);&#13;
-}&#13;
-&#13;
-else if (room=rm_select2)&#13;
-{&#13;
-    room_goto(rm_ycrLoading);&#13;
-}&#13;
-&#13;
-else if (room=rm_select3)&#13;
-{&#13;
-    room_goto(rm_robotnikLoading);&#13;
+            <string>if (room=rm_select1)
+
+{
+
+    room_goto(rm_hillLoading);
+
+}
+
+
+
+else if (room=rm_select2)
+
+{
+
+    room_goto(rm_ycrLoading);
+
+}
+
+
+
+else if (room=rm_select3)
+
+{
+
+    room_goto(rm_robotnikLoading);
+
 }</string>
           </argument>
         </arguments>
@@ -170,8 +183,10 @@ else if (room=rm_select3)&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if gamepad_button_check_pressed(0, gp_start){&#13;
- select_start=1;&#13;
+            <string>if gamepad_button_check_pressed(0, gp_start){
+
+ select_start=1;
+
  }</string>
           </argument>
         </arguments>
@@ -234,8 +249,10 @@ else if (room=rm_select3)&#13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if gamepad_button_check_pressed(0, gp_start){&#13;
- select_start=0;&#13;
+            <string>if gamepad_button_check_pressed(0, gp_start){
+
+ select_start=0;
+
  }</string>
           </argument>
         </arguments>

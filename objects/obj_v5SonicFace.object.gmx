@@ -25,11 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = "zoom";&#13;
-xScale = 1;&#13;
-yScale = 1;&#13;
-alphaValue = 0;&#13;
-col = 16777215;&#13;
+            <string>state = "zoom";
+
+xScale = 1;
+
+yScale = 1;
+
+alphaValue = 0;
+
+col = 16777215;
+
 alarm[0] = room_speed * 8;</string>
           </argument>
         </arguments>
@@ -52,11 +57,16 @@ alarm[0] = room_speed * 8;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>createStatic(2);&#13;
-instance_create(view_xview, view_yview, obj_v5Endgame);&#13;
-&#13;
-var inst;&#13;
-inst = instance_create(0, 0, obj_v5Endgame);&#13;
+            <string>createStatic(2);
+
+instance_create(view_xview, view_yview, obj_v5Endgame);
+
+
+
+var inst;
+
+inst = instance_create(0, 0, obj_v5Endgame);
+
 inst.depth = -1000;</string>
           </argument>
         </arguments>
@@ -79,9 +89,12 @@ inst.depth = -1000;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>col = 255;&#13;
-state = "off";&#13;
-createStatic(1);&#13;
+            <string>col = 255;
+
+state = "off";
+
+createStatic(1);
+
 alarm[1] = room_speed * 15;</string>
           </argument>
         </arguments>
@@ -128,20 +141,34 @@ alarm[1] = room_speed * 15;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == "zoom")&#13;
-{&#13;
-    xScale += 0.015;&#13;
-    yScale += 0.015;&#13;
-    alphaValue += 0.005;&#13;
-    &#13;
-    if (alphaValue &gt;= 1)&#13;
-        alphaValue = 1;&#13;
-}&#13;
-else&#13;
-{&#13;
-    xScale = 1;&#13;
-    yScale = 1;&#13;
-    alphaValue = 1;&#13;
+            <string>if (state == "zoom")
+
+{
+
+    xScale += 0.015;
+
+    yScale += 0.015;
+
+    alphaValue += 0.005;
+
+    
+
+    if (alphaValue &gt;= 1)
+
+        alphaValue = 1;
+
+}
+
+else
+
+{
+
+    xScale = 1;
+
+    yScale = 1;
+
+    alphaValue = 1;
+
 }</string>
           </argument>
         </arguments>

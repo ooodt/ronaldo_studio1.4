@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xDifference = x - view_xview[0];&#13;
+            <string>xDifference = x - view_xview[0];
+
 yDifference = y - view_yview[0];</string>
           </argument>
         </arguments>
@@ -48,10 +49,14 @@ yDifference = y - view_yview[0];</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cx = view_xview[0];&#13;
-cy = view_yview[0];&#13;
-&#13;
-x = cx + xDifference;&#13;
+            <string>cx = view_xview[0];
+
+cy = view_yview[0];
+
+
+
+x = cx + xDifference;
+
 y = cy + yDifference;</string>
           </argument>
         </arguments>
