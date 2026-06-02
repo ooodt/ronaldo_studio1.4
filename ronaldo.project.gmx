@@ -341,8 +341,6 @@
     <object>objects\obj_messageEndgame1</object>
     <object>objects\obj_hidden2EndTrigger</object>
     <object>objects\obj_huh</object>
-    <object>objects\obj_nospam</object>
-    <object>objects\obj_jumpscare</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_message</object>
     <object>objects\obj_skip</object>
