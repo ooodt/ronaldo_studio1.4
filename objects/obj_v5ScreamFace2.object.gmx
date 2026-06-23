@@ -25,10 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xScale = 1;&#13;
-&#13;
-yScale = 1;&#13;
-&#13;
+            <string>xScale = 1;
+
+
+
+yScale = 1;
+
+
+
 alphaValue = 1;</string>
           </argument>
         </arguments>
@@ -51,22 +55,38 @@ alphaValue = 1;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xScale += 0.1;&#13;
-&#13;
-yScale += 0.1;&#13;
-&#13;
-alphaValue -= 0.02;&#13;
-&#13;
-&#13;
-&#13;
-if (alphaValue &lt; 0)&#13;
-&#13;
-{&#13;
-&#13;
-    with (self)&#13;
-&#13;
-        instance_destroy();&#13;
-&#13;
+            <string>xScale += 0.1;
+
+
+
+yScale += 0.1;
+
+
+
+alphaValue -= 0.02;
+
+
+
+
+
+
+
+if (alphaValue &lt; 0)
+
+
+
+{
+
+
+
+    with (self)
+
+
+
+        instance_destroy();
+
+
+
 }</string>
           </argument>
         </arguments>

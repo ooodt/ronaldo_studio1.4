@@ -101,7 +101,6 @@ sound_play(snd_bgmTitle);</code>
     <instance objName="obj_hillWaterfallMid" x="3050" y="240" name="inst_F2CECD74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hillWaterfallMid" x="6634" y="240" name="inst_CB758CFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hillWaterfallMid" x="10218" y="240" name="inst_2AB88EC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_debug" x="480" y="416" name="inst_5DEDA77F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titleMain" x="59" y="84" name="inst_C6224BAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titleSonic" x="239" y="225" name="inst_6F6E4724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_titleFG" x="96" y="224" name="inst_9A8F59C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

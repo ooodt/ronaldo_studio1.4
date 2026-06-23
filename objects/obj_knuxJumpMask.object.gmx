@@ -55,8 +55,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.x=obj_playerMain.x;&#13;
-&#13;
+            <string>self.x=obj_playerMain.x;
+
+
+
 self.y=obj_playerMain.y;</string>
           </argument>
         </arguments>

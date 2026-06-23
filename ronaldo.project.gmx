@@ -213,6 +213,7 @@
   <scripts name="scripts">
     <script>scripts\startup.gml</script>
     <script>scripts\createStatic.gml</script>
+    <script>scripts\controller_slot.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_1</font>
@@ -373,9 +374,9 @@
     <object>objects\obj_msgFires</object>
     <object>objects\obj_doge</object>
     <object>objects\obj_negaRing</object>
-    <object>objects\obj_name</object>
     <object>objects\obj_left_touch</object>
     <object>objects\obj_right_touch</object>
+    <object>objects\obj_debug_checker</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_tailsHill</timeline>
