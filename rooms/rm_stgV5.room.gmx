@@ -63,27 +63,8 @@ obj_playerMain.canJump=0</code>
   </views>
   <instances>
     <instance objName="obj_playerMain" x="320" y="304" name="inst_DA735E39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="0" y="352" name="inst_AB333019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blockBig" x="0" y="352" name="inst_AB333019" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_v5Warper" x="19680" y="-16" name="inst_EAD5AD7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="1024" y="352" name="inst_961C6247" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="2048" y="352" name="inst_48902329" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="3072" y="352" name="inst_3453E7A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="4096" y="352" name="inst_F1A012B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="5120" y="352" name="inst_25E0D382" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="6144" y="352" name="inst_3CBAB85E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="7168" y="352" name="inst_7DBDC97F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="8192" y="352" name="inst_8E4E1A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="9216" y="352" name="inst_E6659585" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="10240" y="352" name="inst_DF83B2B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="11264" y="352" name="inst_C56039A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="12288" y="352" name="inst_2998405E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="13312" y="352" name="inst_65C46A30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="14336" y="352" name="inst_93A329E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="15360" y="352" name="inst_F1218B30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="16384" y="352" name="inst_D4259044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="17408" y="352" name="inst_892370FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="18432" y="352" name="inst_C8845FAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockBig" x="19456" y="352" name="inst_84212790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blockV" x="0" y="0" name="inst_C3D27B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_v5Warper" x="19680" y="-16" name="inst_53CC97DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_v5Black" x="64" y="512" name="inst_F72A9507" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -39,21 +39,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_V5GorePoles)
-
-
-
-    instance_destroy();
-
-
-
-obj_v5ScreamTimer.visible = false;
-
-view_xview[0] = 600;
-
-obj_playerMain.x = 900;
-
-</string>
+            <string>with (obj_V5GorePoles)&#13;
+&#13;
+&#13;
+&#13;
+    instance_destroy();&#13;
+&#13;
+&#13;
+&#13;
+obj_v5ScreamTimer.visible = false;&#13;
+&#13;
+view_xview[0] = 600;&#13;
+&#13;
+obj_playerMain.x = 900;</string>
           </argument>
         </arguments>
       </action>

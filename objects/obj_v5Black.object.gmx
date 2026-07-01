@@ -25,33 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, image_index, x, y, 7500, 100, 0, c_black, 1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_color(c_black);
-draw_set_alpha(1);
-// Draws a massive rectangle relative to the instance position
-draw_rectangle(x - 9999, y - 9999, x + 9999, y + 9999, false); 
-
-</string>
+            <string>draw_sprite_ext(sprite_index, image_index, x, y, 7500, 100, 0, c_black, 1);</string>
           </argument>
         </arguments>
       </action>

@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.player_name = "Player";
-if (os_type == os_windows)
-{
-    global.player_name = environment_get_variable("USERNAME");
-}
-else
-{
-global.player_name = get_string_async("Name","");
-}
-global.slot = -1
+            <string>global.player_name = "Player";&#13;
+if (os_type == os_windows)&#13;
+{&#13;
+    global.player_name = environment_get_variable("USERNAME");&#13;
+}&#13;
+else if (os_type == os_ps3)&#13;
+{&#13;
+global.player_name = PS3&#13;
+}&#13;
+global.slot = -1&#13;
 </string>
           </argument>
         </arguments>

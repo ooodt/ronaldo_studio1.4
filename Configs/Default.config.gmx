@@ -46,7 +46,7 @@
     <option_android_lint>-1</option_android_lint>
     <option_android_major_version>1</option_android_major_version>
     <option_android_min_sdk_version>9</option_android_min_sdk_version>
-    <option_android_minor_version>0</option_android_minor_version>
+    <option_android_minor_version>4</option_android_minor_version>
     <option_android_mmedia_ads>false</option_android_mmedia_ads>
     <option_android_moga>0</option_android_moga>
     <option_android_mopub_ads>0</option_android_mopub_ads>
@@ -59,7 +59,7 @@
     <option_android_package_company>ooodtgaming</option_android_package_company>
     <option_android_package_domain>com</option_android_package_domain>
     <option_android_package_product>ronaldo</option_android_package_product>
-    <option_android_permission_flags>8</option_android_permission_flags>
+    <option_android_permission_flags>24</option_android_permission_flags>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
     <option_android_push_enable>0</option_android_push_enable>
     <option_android_push_id></option_android_push_id>
@@ -327,7 +327,7 @@
     <option_ios_iphonex_splash_png>Configs\Default\ios\iPhonexsplash.png</option_ios_iphonex_splash_png>
     <option_ios_iphonex_splash_portrait_png>Configs\Default\ios\iPhonexsplashPortrait.png</option_ios_iphonex_splash_portrait_png>
     <option_ios_major_version>1</option_ios_major_version>
-    <option_ios_minor_version>0</option_ios_minor_version>
+    <option_ios_minor_version>4</option_ios_minor_version>
     <option_ios_orient_landscape>-1</option_ios_orient_landscape>
     <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
     <option_ios_orient_portrait>-1</option_ios_orient_portrait>
@@ -360,7 +360,7 @@
     <option_linux_texture_page>2048</option_linux_texture_page>
     <option_linux_version_build>0</option_linux_version_build>
     <option_linux_version_major>1</option_linux_version_major>
-    <option_linux_version_minor>0</option_linux_version_minor>
+    <option_linux_version_minor>4</option_linux_version_minor>
     <option_loadalpha>255</option_loadalpha>
     <option_loadimage>nil</option_loadimage>
     <option_loadtransparent>false</option_loadtransparent>
@@ -379,7 +379,7 @@
     <option_mac_interpolate>0</option_mac_interpolate>
     <option_mac_major_version>1</option_mac_major_version>
     <option_mac_menu_dock>0</option_mac_menu_dock>
-    <option_mac_minor_version>0</option_mac_minor_version>
+    <option_mac_minor_version>4</option_mac_minor_version>
     <option_mac_output_dir>~/GameMaker-Studio/ronaldoSTUDIO1_4</option_mac_output_dir>
     <option_mac_scale>0</option_mac_scale>
     <option_mac_screenkey>0</option_mac_screenkey>
@@ -396,7 +396,7 @@
     <option_noscreensaver>true</option_noscreensaver>
     <option_ouya_packaging>0</option_ouya_packaging>
     <option_priority>0</option_priority>
-    <option_ps3_interpolate>0</option_ps3_interpolate>
+    <option_ps3_interpolate>-1</option_ps3_interpolate>
     <option_ps3_nptitleid></option_ps3_nptitleid>
     <option_ps3_nptitlepassphrase>Memo1</option_ps3_nptitlepassphrase>
     <option_ps3_nptitlesecret>Memo1</option_ps3_nptitlesecret>
@@ -419,7 +419,7 @@
     <option_ps4_texture_page>2048</option_ps4_texture_page>
     <option_psvita_build_version>0</option_psvita_build_version>
     <option_psvita_fronttouch>0</option_psvita_fronttouch>
-    <option_psvita_interpolate>0</option_psvita_interpolate>
+    <option_psvita_interpolate>-1</option_psvita_interpolate>
     <option_psvita_major_version>1</option_psvita_major_version>
     <option_psvita_minor_version>0</option_psvita_minor_version>
     <option_psvita_nptitleid></option_psvita_nptitleid>
@@ -430,7 +430,7 @@
     <option_psvita_reartouch>0</option_psvita_reartouch>
     <option_psvita_revision_version>0</option_psvita_revision_version>
     <option_psvita_scale>0</option_psvita_scale>
-    <option_psvita_texture_page>1024</option_psvita_texture_page>
+    <option_psvita_texture_page>2048</option_psvita_texture_page>
     <option_quitkey>true</option_quitkey>
     <option_resolution>0</option_resolution>
     <option_savekey>true</option_savekey>
@@ -570,15 +570,15 @@
     <option_tvos_splash_time>0</option_tvos_splash_time>
     <option_tvos_texture_page>2048</option_tvos_texture_page>
     <option_use_fast_collision>False</option_use_fast_collision>
-    <option_use_new_audio>False</option_use_new_audio>
+    <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>100</option_version>
+    <option_version>1.4.0</option_version>
     <option_version_build>0</option_version_build>
     <option_version_company>ooodt studios</option_version_company>
     <option_version_copyright></option_version_copyright>
     <option_version_description></option_version_description>
     <option_version_major>1</option_version_major>
-    <option_version_minor>2</option_version_minor>
+    <option_version_minor>4</option_version_minor>
     <option_version_product></option_version_product>
     <option_version_release>0</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
@@ -591,7 +591,7 @@
     <option_win8_build_version>0</option_win8_build_version>
     <option_win8_certificate_location>Windows8_TemporaryKey.pfx</option_win8_certificate_location>
     <option_win8_display_name>ronaldo.exe</option_win8_display_name>
-    <option_win8_internet_capable>0</option_win8_internet_capable>
+    <option_win8_internet_capable>-1</option_win8_internet_capable>
     <option_win8_interpolate>0</option_win8_interpolate>
     <option_win8_landscape_allowed>-1</option_win8_landscape_allowed>
     <option_win8_landscape_flipped_allowed>-1</option_win8_landscape_flipped_allowed>
@@ -600,7 +600,7 @@
     <option_win8_logo_foreground_text>light</option_win8_logo_foreground_text>
     <option_win8_major_version>1</option_win8_major_version>
     <option_win8_microphone_capable>0</option_win8_microphone_capable>
-    <option_win8_minor_version>0</option_win8_minor_version>
+    <option_win8_minor_version>4</option_win8_minor_version>
     <option_win8_native_certificate_location>Win8NativeRunner_TemporaryKey.pfx</option_win8_native_certificate_location>
     <option_win8_native_cpu>x86</option_win8_native_cpu>
     <option_win8_package_display_name>ronaldo.exe</option_win8_package_display_name>
@@ -661,7 +661,7 @@
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
-    <option_windows_mainor_version>2</option_windows_mainor_version>
+    <option_windows_mainor_version>4</option_windows_mainor_version>
     <option_windows_major_version>1</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info></option_windows_product_info>

@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>action_sound(snd_msgAppear, 0);
-
-
-
+            <string>action_sound(snd_msgAppear, 0);&#13;
+&#13;
+&#13;
+&#13;
 action_set_alarm(260, 2);</string>
           </argument>
         </arguments>
@@ -51,10 +51,10 @@ action_set_alarm(260, 2);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 15;
-
-
-
+            <string>alarm[1] = 15;&#13;
+&#13;
+&#13;
+&#13;
 visible = false;</string>
           </argument>
         </arguments>

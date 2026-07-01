@@ -99,10 +99,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.hudState="hidden"
-
-
-
+            <string>global.hudState="hidden"&#13;
+&#13;
+&#13;
+&#13;
 obj_hudMain.image_speed=0.6</string>
           </argument>
         </arguments>

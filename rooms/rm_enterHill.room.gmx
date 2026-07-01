@@ -10,8 +10,9 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.character="tails";
-sound_loop(snd_bgmHill);</code>
+  <code>global.character="tails";&#13;
+//sound_loop(snd_bgmHill);&#13;
+audio_play_sound(snd_bgmHill, 10, true);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

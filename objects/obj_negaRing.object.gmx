@@ -25,11 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.25;
-
-
-
-action_set_alarm(15, 0);</string>
+            <string>image_speed = 0.25;&#13;
+action_set_alarm(15, 0);&#13;
+</string>
           </argument>
         </arguments>
       </action>
@@ -75,9 +73,7 @@ action_set_alarm(15, 0);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.rings -= 1;
-
-</string>
+            <string>global.rings -= 1;</string>
           </argument>
         </arguments>
       </action>
@@ -99,26 +95,26 @@ action_set_alarm(15, 0);</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.__argument_relative = 1;
-
-
-
-action_effect(2, 16, 16, 0, 255, 1);
-
-
-
-global.__argument_relative = 0;
-
-
-
-action_set_alarm(15, 0);
-
-
-
-global.__argument_relative = 1;
-
-
-
+            <string>global.__argument_relative = 1;&#13;
+&#13;
+&#13;
+&#13;
+action_effect(2, 16, 16, 0, 255, 1);&#13;
+&#13;
+&#13;
+&#13;
+global.__argument_relative = 0;&#13;
+&#13;
+&#13;
+&#13;
+action_set_alarm(15, 0);&#13;
+&#13;
+&#13;
+&#13;
+global.__argument_relative = 1;&#13;
+&#13;
+&#13;
+&#13;
 global.__argument_relative = 0;</string>
           </argument>
         </arguments>

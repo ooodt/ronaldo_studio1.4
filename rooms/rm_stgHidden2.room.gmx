@@ -10,18 +10,18 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.robotnikHiddenClear=1
-//Set Camera Position
-sound_loop(snd_bgmHidden2);
-//Build HUD
-instance_create(view_xview,view_yview,obj_hudMain);
-instance_create(view_xview,view_yview,obj_score_controller);
-instance_create(view_xview,view_yview,obj_rings_controller);
-instance_create(view_xview,view_yview,obj_countup_controller);
-instance_create(view_xview+13,view_yview+406,obj_hudIcon);
-
-instance_create(view_xview,view_yview,obj_fadeIn);
-global.character = "robotnik";
+  <code>global.robotnikHiddenClear=1&#13;
+//Set Camera Position&#13;
+audio_play_sound(snd_bgmHidden2, 10, true);&#13;
+//Build HUD&#13;
+instance_create(view_xview,view_yview,obj_hudMain);&#13;
+instance_create(view_xview,view_yview,obj_score_controller);&#13;
+instance_create(view_xview,view_yview,obj_rings_controller);&#13;
+instance_create(view_xview,view_yview,obj_countup_controller);&#13;
+instance_create(view_xview+13,view_yview+406,obj_hudIcon);&#13;
+&#13;
+instance_create(view_xview,view_yview,obj_fadeIn);&#13;
+global.character = "robotnik";&#13;
 //instance_create(0,0,obj_fadeInBlack);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
