@@ -10,12 +10,18 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>obj_hillBGMain.depth=-7;&#13;
-obj_hillWater.depth=-12;&#13;
-obj_hillWater.sprite_index=spr_titleWater;&#13;
-obj_hillWater.image_speed=0.2;&#13;
-instance_create(view_xview,view_yview,obj_fadeIn);&#13;
-//sound_play(snd_bgmTitle);&#13;
+  <code>obj_hillBGMain.depth=-7;
+
+obj_hillWater.depth=-12;
+
+obj_hillWater.sprite_index=spr_titleWater;
+
+obj_hillWater.image_speed=0.2;
+
+instance_create(view_xview,view_yview,obj_fadeIn);
+
+//sound_play(snd_bgmTitle);
+
 audio_play_sound(snd_bgmTitle, 10, false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

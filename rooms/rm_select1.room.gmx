@@ -10,16 +10,26 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(view_xview,view_yview,obj_fadeIn);&#13;
-//sound_loop(snd_bgmSelect);&#13;
-audio_play_sound(snd_bgmSelect, 10, true);&#13;
-&#13;
-if global.playerscore == 1&#13;
-{&#13;
-audio_stop_sound(snd_bgmSelect);&#13;
-action_sound(snd_msgAppear, 0);&#13;
-show_message_async("ERROR: missing data");&#13;
-room_goto(rm_ycrLoading);&#13;
+  <code>instance_create(view_xview,view_yview,obj_fadeIn);
+
+//sound_loop(snd_bgmSelect);
+
+audio_play_sound(snd_bgmSelect, 10, true);
+
+
+
+if global.playerscore == 1
+
+{
+
+audio_stop_sound(snd_bgmSelect);
+
+action_sound(snd_msgAppear, 0);
+
+show_message_async("ERROR: missing data");
+
+room_goto(rm_ycrLoading);
+
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

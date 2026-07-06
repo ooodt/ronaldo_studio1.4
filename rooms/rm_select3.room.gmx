@@ -10,8 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>obj_select1.sprite_index=spr_select3;&#13;
-instance_create(view_xview,view_yview,obj_fadeIn);&#13;
+  <code>obj_select1.sprite_index=spr_select3;
+
+instance_create(view_xview,view_yview,obj_fadeIn);
+
 audio_play_sound(snd_bgmSelect, 10, true);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

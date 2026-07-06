@@ -10,9 +10,12 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.character="robotnik"&#13;
-global.hudState="normal"&#13;
-//sound_loop(snd_bgmRobotnik);&#13;
+  <code>global.character="robotnik"
+
+global.hudState="normal"
+
+//sound_loop(snd_bgmRobotnik);
+
 audio_play_sound(snd_bgmRobotnik, 10, true);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
