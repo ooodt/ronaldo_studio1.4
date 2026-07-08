@@ -26,310 +26,46 @@
           <argument>
             <kind>1</kind>
             <string>if (global.character="tails")
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
     instance_create(self.x,self.y,obj_tailsSpriteMask);
-
-
-
-
-
-
-
     instance_create(self.x,self.y,obj_tailsJumpMask);
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 else if (global.character="knux")
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         instance_create(self.x,self.y,obj_knuxSpriteMask);
-
-
-
-
-
-
-
         instance_create(self.x,self.y,obj_knuxJumpMask);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 else if (global.character="robotnik")
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
     instance_create(self.x,self.y,obj_robotnikSpriteMask);
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 else if (global.character="sonic")
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
     canJump = 0;
-
-
-
-
-
-
-
     instance_create(self.x,self.y,obj_sonicSpriteMask);
+	instance_create(self.x,self.y,obj_sonicJumpMask);
+}
 
-
-
-
-
-
-
-	    instance_create(self.x,self.y,obj_sonicJumpMask);
-
-
-
-
-
-
-
-}</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Core Variables
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Core Variables
 
 var_speed = 1; // The speed the player gains per step until it have reached its max
-
-
-
-
-
-
-
 var_maxspeed = 7; // The max speed the player can have
-
-
-
-
-
-
-
 var_jumpheight = 12; // The hight the player jumps
-
-
-
-
-
-
-
 var_move = 0; // If the player is moving (using A or D)
-
-
-
-
-
-
-
 var_gravity = 0.5; // The gravity
-
-
-
-
-
-
-
 var_direction = "stopped"
-
-
-
-
-
-
-
 canJump=1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-global.move_right=0;
-
-
-
-global.move_left=0;
-
-
-
-global.move_jump=0;
-
-
-
-device_mouse_dbclick_enable(true);</string>
+move_right=0
+move_left=0
+move_jump=0
+device_mouse_dbclick_enable(true)
+</string>
           </argument>
         </arguments>
       </action>
@@ -572,358 +308,149 @@ hspeed = 0; }</string>
           <argument>
             <kind>1</kind>
             <string>// Gravity
-
-if place_free(x,y+1) 
-
-{
-
-gravity = var_gravity; 
-
-}
-
-else 
-
-{
-
-gravity = 0;
-
-}
+if place_free(x,y+1) {
+gravity = var_gravity; }
+else {
+gravity = 0; }
 
 // Speed
-
 if hspeed &gt;= var_speed
-
-and var_move = 0 
-
-{
-
-hspeed -= var_speed; 
-
-}
+and var_move = 0 {
+hspeed -= var_speed; }
 
 if hspeed &lt;= -var_speed
-
-and var_move = 0 
-
-{
-
-hspeed += var_speed; 
-
-}
+and var_move = 0 {
+hspeed += var_speed; }
 
 // Move
-
-if global.move_right == 1
-
-or global.move_left == 1
-
-{
-
-var_move = 1; 
-
-}
-
-else 
-
-{
-
-var_move = 0;
-
-}
+if move_right == 1
+or move_left == 1{
+var_move = 1; }
+else {
+var_move = 0;}
 
 // setup
-
 if gamepad_button_check(global.slot, gp_padr) || keyboard_check(vk_right)
-
 {
-
-global.move_right = 1;
-
+move_right = 1;
 }
-
 if gamepad_button_check_released(global.slot, gp_padr) ||keyboard_check_released(vk_right)
-
 {
-
-global.move_right = 0;
-
+move_right = 0;
 }
-
 if gamepad_button_check(global.slot, gp_padl) || keyboard_check(vk_left)
-
 {
-
-global.move_left = 1;
-
+move_left = 1;
 }
-
 if gamepad_button_check_released(global.slot, gp_padl) || keyboard_check_released(vk_left)
-
 {
-
-global.move_left = 0;
-
-global.move_right =3
-
+move_left = 0;
+move_right =3
 }
-
-if keyboard_check_pressed(vk_space)||gamepad_button_check_pressed(global.slot, gp_face1)
-
+if gamepad_button_check_pressed(global.slot, gp_face1) || keyboard_check_pressed(vk_space)
 {
-
-global.move_jump=1
-
+move_jump=1
 }
-
-
 
 // Movement right
-
-if global.move_right == 1
-
-{
-
+if move_right == 1{
 if place_free(x+hspeed+var_speed,y)
-
-and hspeed &lt; var_maxspeed 
-
-{
-
+and hspeed &lt; var_maxspeed {
 hspeed += var_speed;
-
-var_direction = "right"; 
-
+var_direction = "right"; }
 }
-
-}
-
 // Stop (if the player can go the double speed towards the solid, it will)
-
-if global.move_right == 0
-
-{
-
-if hspeed &gt;= (var_speed*2) 
-
-{
-
-hspeed -= (var_speed*2);
-
-}
+if move_right == 0{
+if hspeed &gt;= (var_speed*2) {
+hspeed -= (var_speed*2); }
 
 if not hspeed &gt;= (var_speed*2)
-
-and hspeed &gt;= var_speed 
-
-{
-
+and hspeed &gt;= var_speed {
 hspeed -= var_speed;
-
-var_direction = "stopped"; 
-
-}
+var_direction = "stopped"; }
 
 }
 
 // Movement left
-
-if global.move_left == 1
-
-{
-
+if move_left == 1{
 if place_free(x-hspeed-var_speed,y)
-
-and hspeed &gt; -var_maxspeed 
-
-{
-
+and hspeed &gt; -var_maxspeed {
 hspeed -= var_speed;
-
-var_direction = "left"; 
-
+var_direction = "left"; }
 }
-
-}
-
 // Stop (if the player can go the double speed towards the solid, it will)
-
-if global.move_left == 0{
-
-if hspeed &lt;= -(var_speed*2) 
-
-{
-
-hspeed += (var_speed*2); 
-
-}
+if move_left == 0{
+if hspeed &lt;= -(var_speed*2) {
+hspeed += (var_speed*2); }
 
 if not hspeed &lt;= -(var_speed*2)
-
-and hspeed &lt;= -var_speed 
-
-{
-
+and hspeed &lt;= -var_speed {
 hspeed += var_speed;
-
-var_direction = "stopped"; 
-
+var_direction = "stopped"; }
 }
-
-}
-
-
 
 // Jump 
-
-if global.move_jump==1{
-
-global.move_jump=0
-
+if move_jump == 1 {
+move_jump = 0;
 if (canJump=1)
-
 if not (global.character="robotnik")
-
 {
-
 if not place_free(x,y+1)
-
-and place_free(x,y-1) 
-
-{
-
+and place_free(x,y-1) {
 vspeed -= var_jumpheight;
-
-audio_play_sound(snd_jump, 10, false);
-
+audio_play_sound(snd_jump, 0, false);
 if (global.character = "tails")
-
 {
-
 obj_tailsJumpMask.visible = 1;
-
 obj_tailsSpriteMask.visible = 0;
-
 }
-
 if (global.character = "knux")
-
 {
-
 obj_knuxJumpMask.visible = 1;
-
 obj_knuxSpriteMask.visible = 0;
-
 }
-
-alarm[1]=50; 
-
-}
-
-}
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//ANALOG SUPPORT
-
-if (gamepad_is_connected(global.slot))
-
+if (global.character = "sonic")
 {
-
+obj_sonicJumpMask.visible = 1;
+obj_sonicSpriteMask.visible = 0;
+}
+alarm[1]=50; }
+}
+}
+//ANALOG SUPPORT
+if (gamepad_is_connected(global.slot))
+{
 var deadzone = 0.3;
 
 //Right movement
-
-
-
-if (keyboard_check(vk_right) 
-
-
-
-    || gamepad_button_check(global.slot, gp_padr) 
-
-
-
-    || gamepad_axis_value(global.slot, gp_axislh) &gt; deadzone) 
-
-
-
+if (keyboard_check(vk_right) || gamepad_button_check(global.slot, gp_padr) || gamepad_axis_value(global.slot, gp_axislh) &gt; deadzone) 
 {
-
-    global.move_right = 1;
-
+    move_right = 1;
 } 
-
 else 
-
 {
-
-    if (global.move_right != 3) 
-
+    if (move_right != 3) 
     {
-
-        global.move_right = 0;
-
+        move_right = 0;
     }
-
 }
-
 //Left movement
 
-
-
-if (keyboard_check(vk_left) 
-
-
-
-    || gamepad_button_check(global.slot, gp_padl) 
-
-
-
-    || gamepad_axis_value(global.slot, gp_axislh) &lt; -deadzone) 
-
-
-
+if (keyboard_check(vk_left) || gamepad_button_check(global.slot, gp_padl) || gamepad_axis_value(global.slot, gp_axislh) &lt; -deadzone) 
 {
-
-    global.move_left = 1;
-
+    move_left = 1;
 }
-
 else 
-
 {
-
-    if (global.move_left == 1) {
-
-        global.move_left = 0;
-
-        global.move_right = 3; 
-
+    if (move_left == 1) 
+{
+        move_left = 0;
+        move_right = 3; 
     }
-
+}
 }
 
-}</string>
+</string>
           </argument>
         </arguments>
       </action>
@@ -1235,9 +762,9 @@ vspeed = 0;</string>
     <event eventtype="6" enumb="54">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -1249,175 +776,11 @@ vspeed = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Jump
-
-
-
-
-
-
-
-if (canJump=1)
-
-
-
-
-
-
-
-if not (global.character="robotnik")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-if not place_free(x,y+1)
-
-
-
-
-
-
-
-and place_free(x,y-1) {
-
-
-
-
-
-
-
-vspeed -= var_jumpheight;
-
-
-
-
-
-
-
-sound_play(snd_jump);
-
-
-
-
-
-
-
-if (global.character = "tails")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-obj_tailsJumpMask.visible = 1;
-
-
-
-
-
-
-
-obj_tailsSpriteMask.visible = 0;
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-if (global.character = "knux")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-obj_knuxJumpMask.visible = 1;
-
-
-
-
-
-
-
-obj_knuxSpriteMask.visible = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-alarm[1]=50; }
-
-
-
-
-
-
-
-}</string>
+            <string>move_jump</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -1425,9 +788,9 @@ alarm[1]=50; }
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -1439,175 +802,11 @@ alarm[1]=50; }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Jump
-
-
-
-
-
-
-
-if (canJump=1)
-
-
-
-
-
-
-
-if not (global.character="robotnik")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-if not place_free(x,y+1)
-
-
-
-
-
-
-
-and place_free(x,y-1) {
-
-
-
-
-
-
-
-vspeed -= var_jumpheight;
-
-
-
-
-
-
-
-sound_play(snd_jump);
-
-
-
-
-
-
-
-if (global.character = "tails")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-obj_tailsJumpMask.visible = 1;
-
-
-
-
-
-
-
-obj_tailsSpriteMask.visible = 0;
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-if (global.character = "knux")
-
-
-
-
-
-
-
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-obj_knuxJumpMask.visible = 1;
-
-
-
-
-
-
-
-obj_knuxSpriteMask.visible = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-alarm[1]=50; }
-
-
-
-
-
-
-
-}</string>
+            <string>move_jump</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>

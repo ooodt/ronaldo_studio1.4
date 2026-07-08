@@ -57,34 +57,6 @@
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.move_right = 0;
-
-
-
-
-
-
-
-global.move_left = 0;</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -104,555 +76,76 @@ global.move_left = 0;</string>
           <argument>
             <kind>1</kind>
             <string>self.x=obj_playerMain.x;
+self.y=obj_playerMain.y;
 
 
+//Movement
 
-
-
-
-
-self.y=obj_playerMain.y;</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//movement
-
-
-
-
-
-
-
-if global.move_left == 1
-
-
-
-
-
-
-
+if obj_playerMain.move_left == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsLeft
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if global.move_left == 0
-
-
-
-
-
-
-
+if obj_playerMain.move_left == 0
 {
-
-
-
-
-
-
-
 if (hideandseek=0)
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsIdleLeft
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 else
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsScaredLeft
-
-
-
-
-
-
-
 image_speed=0.2
-
-
-
-
-
-
-
+}
 }
 
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if global.move_right == 1
-
-
-
-
-
-
-
+if obj_playerMain.move_right == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsRight
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if global.move_right == 0
-
-
-
-
-
-
-
+if obj_playerMain.move_right == 0
 {
-
-
-
-
-
-
-
 if (hideandseek=0)
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsIdleRight
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 else
-
-
-
-
-
-
-
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsScaredRight
-
-
-
-
-
-
-
 image_speed=0.2
-
-
-
-
-
-
-
+}
 }
 
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if global.move_right == 0 &amp;&amp; global.move_left == 1
-
-
-
-
-
-
-
+if obj_playerMain.move_right == 0 &amp;&amp; obj_playerMain.move_left == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsLeft
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if global.move_left == 0 &amp;&amp; global.move_right == 1
-
-
-
-
-
-
-
+if obj_playerMain.move_left == 0 &amp;&amp; obj_playerMain.move_right == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsRight
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if (obj_playerMain.var_direction = "right") &amp;&amp; global.move_right == 1 &amp;&amp; global.move_left == 1
-
-
-
-
-
-
-
+if (obj_playerMain.var_direction = "right") &amp;&amp; obj_playerMain.move_right == 1 &amp;&amp; obj_playerMain.move_left == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsRight
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if (obj_playerMain.var_direction = "left") &amp;&amp; global.move_left == 1 &amp;&amp; global.move_right == 1
-
-
-
-
-
-
-
+if (obj_playerMain.var_direction = "left") &amp;&amp; obj_playerMain.move_left == 1 &amp;&amp; obj_playerMain.move_right == 1
 {
-
-
-
-
-
-
-
 sprite_index=spr_tailsLeft
-
-
-
-
-
-
-
 image_speed=0.15
-
-
-
-
-
-
-
 }
-
 </string>
           </argument>
         </arguments>

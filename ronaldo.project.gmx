@@ -343,7 +343,6 @@
     <object>objects\obj_huh</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_message</object>
-    <object>objects\obj_skip</object>
     <object>objects\obj_sonicJumpMask</object>
     <object>objects\obj_sonicSpriteMask</object>
     <object>objects\obj_v5BG</object>
@@ -377,6 +376,7 @@
     <object>objects\obj_left_touch</object>
     <object>objects\obj_right_touch</object>
     <object>objects\obj_debug_checker</object>
+    <object>objects\obj_jump</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_tailsHill</timeline>

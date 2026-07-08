@@ -26,27 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed * 30;
-
-
-
 image_speed=0;
 
-if (global.tailsHiddenClear=1) &amp;&amp; (global.knuxHiddenClear=1) &amp;&amp; (global.robotnikHiddenClear=1)
-
+if global.playerscore==1
 {
-
-    image_index=1;
-
+	image_index=2;
 }
-
-
-
-else
-
+else if (global.tailsHiddenClear=1) &amp;&amp; (global.knuxHiddenClear=1) &amp;&amp; (global.robotnikHiddenClear=1)
 {
-
-    image_index=0
-
+    image_index=1;
+}
+else
+{
+    image_index=0;
 }
 
 </string>
@@ -71,47 +63,18 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.rings == -3)
-
-
-
-
-
-
-
+            <string>if global.playerscore == 1
 {
+show_message("ERROR: missing data. Please check back for a later update");
+}
 
-
-
-
-
-
-
+else if (global.rings == -3)
+{
     global.character = "sonic";
-
-
-
-
-
-
-
     audio_stop_sound(snd_endgameMessage1);
-
-
-
-
-
-
-
     room_goto(rm_stgV5);
-
-
-
-
-
-
-
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>

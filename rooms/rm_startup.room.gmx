@@ -55,6 +55,8 @@
     <instance objName="obj_left_touch" x="-16" y="0" name="inst_8B818998" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_right_touch" x="400" y="0" name="inst_D5E207FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_debug_checker" x="288" y="416" name="inst_D96C85C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_jump" x="544" y="64" name="inst_8C6EF7C0" locked="0" code="" scaleX="-6.76595735549927" scaleY="1.57500004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_jump" x="96" y="64" name="inst_1DCEB83B" locked="0" code="" scaleX="-6.76595735549927" scaleY="1.57500004768372" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

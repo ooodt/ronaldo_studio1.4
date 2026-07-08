@@ -26,14 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>xDifference = x - view_xview[0];
-
-
-
-
-
-
-
-yDifference = y - view_yview[0];</string>
+yDifference = y - view_yview[0];
+</string>
           </argument>
         </arguments>
       </action>
@@ -56,38 +50,11 @@ yDifference = y - view_yview[0];</string>
           <argument>
             <kind>1</kind>
             <string>cx = view_xview[0];
-
-
-
-
-
-
-
 cy = view_yview[0];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 x = cx + xDifference;
-
-
-
-
-
-
-
-y = cy + yDifference;</string>
+y = cy + yDifference;
+</string>
           </argument>
         </arguments>
       </action>
@@ -109,7 +76,11 @@ y = cy + yDifference;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_right = 0;</string>
+            <string>if instance_exists(obj_playerMain)
+{
+obj_playerMain.move_right=0
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -131,7 +102,11 @@ y = cy + yDifference;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_right = 0;</string>
+            <string>if instance_exists(obj_playerMain)
+{
+obj_playerMain.move_right=0
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -153,7 +128,12 @@ y = cy + yDifference;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move_right = 1;</string>
+            <string>if instance_exists(obj_playerMain)
+{
+obj_playerMain.move_right=1
+global.slot=-1
+}
+</string>
           </argument>
         </arguments>
       </action>

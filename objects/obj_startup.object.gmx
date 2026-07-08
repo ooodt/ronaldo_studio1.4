@@ -34,7 +34,6 @@ if (os_type == os_windows)
 }
 
 else if (os_type == os_ps3)
-
 {
 global.player_name = PS3
 }
