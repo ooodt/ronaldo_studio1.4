@@ -407,7 +407,7 @@
     <option_ps3_version>1.00</option_ps3_version>
     <option_ps4_build_version>0</option_ps4_build_version>
     <option_ps4_displaycursor>0</option_ps4_displaycursor>
-    <option_ps4_interpolate>-1</option_ps4_interpolate>
+    <option_ps4_interpolate>0</option_ps4_interpolate>
     <option_ps4_major_version>1</option_ps4_major_version>
     <option_ps4_minor_version>0</option_ps4_minor_version>
     <option_ps4_nptitleid></option_ps4_nptitleid>
